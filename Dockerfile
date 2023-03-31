@@ -15,7 +15,14 @@ WORKDIR /app
 RUN git clone https://bitbucket.org/jpcgt/flatcam.git
 RUN apt install -y xvfb
 WORKDIR /app/flatcam
+RUN apt install -y patch
+COPY 0001-Fix-command-line-export_svg-command.patch /tmp
+RUN patch -p 1 < /tmp/0001-Fix-command-line-export_svg-command.patch
+RUN . ~/.bashrc && mamba activate flatcam && pip install -e .
 
 ENV DISPLAY=:99
 RUN echo "mamba activate flatcam" >> ~/.bashrc
-CMD (nohup Xvfb :99 -screen 0 1000x1000x16 &) &&  /bin/bash
+CMD (nohup Xvfb :99 -screen 0 1000x1000x16 &) > /dev/null &&  /bin/bash
+
+COPY examples /examples
+WORKDIR /examples

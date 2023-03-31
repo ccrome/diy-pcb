@@ -1,0 +1,53 @@
+From 12a1fd2841f1b25adbf5e17bde19f934e204537d Mon Sep 17 00:00:00 2001
+From: Caleb Crome <caleb@crome.org>
+Date: Fri, 31 Mar 2023 22:52:15 +0000
+Subject: [PATCH] Fix command line export_svg command
+
+---
+ tclCommands/TclCommandExportSVG.py | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/tclCommands/TclCommandExportSVG.py b/tclCommands/TclCommandExportSVG.py
+index 07fb65b6..e0860f64 100644
+--- a/tclCommands/TclCommandExportSVG.py
++++ b/tclCommands/TclCommandExportSVG.py
+@@ -14,7 +14,7 @@ class TclCommandExportSVG(TclCommand):
+ 
+     # Dictionary of types from Tcl command, needs to be ordered
+     arg_names = collections.OrderedDict([
+-        ('name', str),
++        ('obj_name', str),
+         ('filename', str),
+         ('scale_factor', float)
+     ])
+@@ -24,14 +24,14 @@ class TclCommandExportSVG(TclCommand):
+ 
+     ])
+ 
+-    # array of mandatory options for current Tcl command: required = {'name','outname'}
+-    required = ['name', 'filename']
++    # array of mandatory options for current Tcl command: required = {'obj_name','outname'}
++    required = ['obj_name', 'filename']
+ 
+     # structured help for current command, args needs to be ordered
+     help = {
+         'main': "Export a Geometry Object as a SVG File.",
+         'args': collections.OrderedDict([
+-            ('name', 'Name of the object export.'),
++            ('obj_name', 'Name of the object export.'),
+             ('filename', 'Path to the file to export.'),
+             ('scale_factor', 'Multiplication factor used for scaling line widths during export.')
+         ]),
+@@ -46,7 +46,7 @@ class TclCommandExportSVG(TclCommand):
+         :return:
+         """
+ 
+-        name = args['name']
++        name = args['obj_name']
+         filename = args['filename']
+ 
+-        self.app.export_svg(name, filename, **args)
++        self.app.export_svg(**args)
+-- 
+2.34.1
+

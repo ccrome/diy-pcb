@@ -1,0 +1,4 @@
+#!/bin/bash
+flatcam --shellfile /examples/test.script & TO_KILL=$!
+sleep 3
+kill -9 $TO_KILL
