@@ -67,14 +67,14 @@ The film needs moderate heat and pressure to properly adhere enough to resist.
 
 Presented in this document are two (three) methods, one using a Clothes Iron (or Hot Air, or even a Hair Dryer) and one using a Laminator.
 
-![3 layers](images/dry-film-has-3-layers.jpg)
+![3 layers](images/dry-film-has-3-layers-small.jpg)
 
 ### Wet Lamination Method (Clothes Iron, or Hot Air)
 This method is my current favourite, it is sort of my own devising and works quite well at least for the small (7x10cm or less) boards I most commonly make.
 
 In addition to the dry film you will need a “travel spray bottle” of water, you can buy such bottles at your local cheap-chinesestuff store, and some
 sellotape.
-![bottle](images/spray.jpg)
+![bottle](images/spray-small.jpg)
 Start by cleaning your PCB as detailed
 previously.
 
@@ -144,7 +144,7 @@ If you did get a bubble in there, prick it with the tip of a craft knife and run
 
 Allow to cool, then remove PCB. Laminated boards can be stored in the dark ready to use, not sure how long for, I've stored them for 2 weeks before using without any trouble, so perhaps forever is the answer.
 
-![Carrier](images/carrier.jpg)
+![Carrier](images/carrier-small.jpg)
 
 ## Exposure:
 You need a negative artwork, transparent areas will remain on the board as resist, black areas will be removed.
@@ -217,7 +217,7 @@ will CLEARLY see the traces burned “ ” onto the board.
 Leave the board to further cure in a dark place for a
 few minutes.
 
-![Exposure Example](images/example-of-exposure.jpg)
+![Exposure Example](images/example-of-exposure-small.jpg)
 
 **NB: Exact colour of pre-exposed film varies between
 manufacturers and types, but for the most part they
@@ -250,7 +250,7 @@ in the laundry aisle of most
 supermarkets, look for natural fabric
 softeners!
 
-![Washing Soda](images/washing-soda.jpg)
+![Washing Soda](images/washing-soda-small.jpg)
 
 Mix about 30g of the sodium carbonate
 containing laundry powder of your choice into 1 Litre
@@ -276,7 +276,7 @@ your actual toothbrush, maybe now is a
 good time to buy a new one and relegate
 your old one to PCB duty.
 
-![Toothbrush](images/toothbrush.jpg)
+![Toothbrush](images/toothbrush-small.jpg)
 
 It's done when it looks like all the
 left over gunk has gone and you have
@@ -294,7 +294,7 @@ washing soda in your eyes could be a
 bit unpleasant, but apart from that
 it's not dangerous.
 
-![Developing](images/developing.jpg)
+![Developing](images/developing-small.jpg)
 *After developing (2-3 minutes) and rinsing the copper to be removed is clean and all "gunk" removed.*
 
 ## Hardening Exposure:
@@ -311,7 +311,7 @@ few seconds in the developer and a rub with your
 fingers or a toothbrush, then immediately rinse in
 water again.
 
-![Hardening Exposure](images/hardening.jpg)
+![Hardening Exposure](images/hardening-small.jpg)
 *After the hardening exposure, little change is apparent just a bit darker. Notice there is no bluing of the copper to be removed indicating the developing was long enough and not overexposed. If there was bluing,it can go back in the developer briefly to clean it up then rinse.*
 
 ## Drying:
