@@ -1,0 +1,3 @@
+[submodule "lib/gerb2etch"]
+	path = lib/gerb2etch
+	url = git@github.com:sleemanj/gerb2etch.git

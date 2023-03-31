@@ -74,9 +74,10 @@ This method is my current favourite, it is sort of my own devising and works qui
 
 In addition to the dry film you will need a “travel spray bottle” of water, you can buy such bottles at your local cheap-chinesestuff store, and some
 sellotape.
+
 ![bottle](images/spray-small.jpg)
-Start by cleaning your PCB as detailed
-previously.
+
+Start by cleaning your PCB as detailed previously.
 
 Now with the PCB clean and dry place it on a flat surface (that's not going to care if it gets hot, your mum's dining table probably not a good place).
 
