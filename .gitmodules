@@ -1,3 +1,6 @@
 [submodule "lib/gerb2etch"]
 	path = lib/gerb2etch
 	url = git@github.com:sleemanj/gerb2etch.git
+[submodule "lib/flatcam"]
+	path = lib/flatcam
+	url = https://bitbucket.org/jpcgt/flatcam.git
