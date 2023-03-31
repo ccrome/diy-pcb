@@ -1,0 +1,2 @@
+open_gerber /examples/moduleDriver-F_Cu.gtl -outname top
+export_svg top /examples/moduleDriver-F_Cu.svg

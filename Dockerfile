@@ -1,5 +1,5 @@
 from ubuntu:22.04
-# from continuumio/anaconda3:2022.10
+
 RUN apt update
 RUN apt upgrade -y
 RUN apt install -y curl git
@@ -26,3 +26,5 @@ CMD (nohup Xvfb :99 -screen 0 1000x1000x16 &) > /dev/null &&  /bin/bash
 
 COPY examples /examples
 WORKDIR /examples
+
+RUN apt install -y openscad

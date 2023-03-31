@@ -2,3 +2,6 @@
 flatcam --shellfile /examples/test.script & TO_KILL=$!
 sleep 3
 kill -9 $TO_KILL
+
+openscad -o moduleDriver-F_Cu.stl go.scad
+chown 1000:1000 *
