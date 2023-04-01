@@ -1,0 +1,43 @@
+
+
+   ---- Transcoding 'C:\Users\caleb\diy-pcb\test_pcb\test_pcb\test_pcb-F_Cu.gbr' ----   Fri Mar 31 22:37:52 2023
+
+D11   --> D100
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\caleb\diy-pcb\test_pcb\test_pcb\test_pcb-F_Mask.gbr' ----   Fri Mar 31 22:37:52 2023
+
+D10   --> D101
+D11   --> D102
+D12   --> D103
+D13   --> D104
+D14   --> D105
+D15   --> D106
+D16   --> D107
+D17   --> D108
+D18   --> D109
+D19   --> D110
+D20   --> D111
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\caleb\diy-pcb\test_pcb\test_pcb\test_pcb-F_Paste.gbr' ----   Fri Mar 31 22:37:52 2023
+
+D10   --> D112
+D11   --> D113
+D12   --> D114
+D13   --> D115
+D14   --> D116
+D15   --> D117
+D16   --> D118
+D17   --> D119
+D18   --> D120
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\caleb\diy-pcb\test_pcb\test_pcb\test_pcb-F_Silkscreen.gbr' ----   Fri Mar 31 22:37:52 2023
+
+D10   --> D121
+D11   --> D122
+-----------------------------------------------------------------
