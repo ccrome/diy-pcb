@@ -2,6 +2,7 @@ import subprocess
 import argparse
 import os
 import time
+import uuid
 
 def get_args():
     parser = argparse.ArgumentParser(description='Convert gerber files to stl')
@@ -52,7 +53,7 @@ def main():
     args = get_args()
     print(args)
     print("starting gerber2svg")
-    svg_fn = "/test.svg"
+    svg_fn = "/tmp/{uuid.UUID()}.svg"
     gerber2svg(args.input, svg_fn)
     print("starting svg2stl")
     output_fn = svg2stl(svg_fn, args.output)

@@ -1,0 +1,4 @@
+
+        open_gerber /home/caleb/diy-pcb/test_pcb/test_pcb/gerber/test_pcb-full-bed-F_Cu.gbr -outname input
+        export_svg input /tmp/{uuid.UUID()}.svg
+    
