@@ -1,6 +1,7 @@
 import subprocess
 import argparse
 import os
+import time
 
 def get_args():
     parser = argparse.ArgumentParser(description='Convert gerber files to stl')
@@ -15,13 +16,16 @@ def gerber2svg(input, output):
     abs_output = os.path.abspath(output)
     script = f"""
         open_gerber {abs_input} -outname input
-        export_svg input -outname {abs_output}
+        export_svg input {abs_output}
     """
     script_fn = f"{input}.fc"
     abs_script_fn = os.path.abspath(script_fn)
     with open(abs_script_fn, 'w') as f:
         f.write(script)
-    subprocess.run(['flatcam', '--shellfile', abs_script_fn])
+    r = subprocess.Popen(['flatcam', '--shellfile', abs_script_fn])
+    time.sleep(3)
+    r.kill()
+    
 
 #    fn = f"{input}.svg"
 #    r = subprocess.run(['gerbv', '-x', 'svg', '-o', fn, input])
@@ -46,7 +50,11 @@ def svg2stl(input, output):
 
 def main():
     args = get_args()
-    svg_fn = gerber2svg(args.input, args.output)
+    print(args)
+    print("starting gerber2svg")
+    svg_fn = "/test.svg"
+    gerber2svg(args.input, svg_fn)
+    print("starting svg2stl")
     output_fn = svg2stl(svg_fn, args.output)
     print(f"Created {output_fn} from {args.input} and {svg_fn}.")
 

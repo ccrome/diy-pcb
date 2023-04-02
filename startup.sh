@@ -1,9 +1,10 @@
-#!/bin/bash
+#!/bin/bash -i
 
-(nohup Xvfb :99 -screen 0 1000x1000x16 &) > /dev/null
-mamba init
-. ~/.bashrc
+echo "starting Xvfb"
+nohup Xvfb :99 -screen 0 1000x1000x16 > /dev/null &
+echo "xvfb started"
+echo "sleeping 1"
 mamba activate flatcam
-which flatcam
-
-#python /app/gerber2stl.py /in.gerber /output.stl
+sleep 1
+echo "starting gerber2stl"
+python /app/gerber2stl.py /in.gerber /output.stl
