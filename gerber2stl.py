@@ -23,6 +23,7 @@ def gerber2svg(input, output):
     abs_script_fn = os.path.abspath(script_fn)
     with open(abs_script_fn, 'w') as f:
         f.write(script)
+    print(script)
     r = subprocess.Popen(['flatcam', '--shellfile', abs_script_fn])
     time.sleep(3)
     r.kill()
@@ -53,7 +54,7 @@ def main():
     args = get_args()
     print(args)
     print("starting gerber2svg")
-    svg_fn = "/tmp/{uuid.UUID()}.svg"
+    svg_fn = f"/tmp/{uuid.uuid4()}.svg"
     gerber2svg(args.input, svg_fn)
     print("starting svg2stl")
     output_fn = svg2stl(svg_fn, args.output)

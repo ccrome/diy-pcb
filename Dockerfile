@@ -25,6 +25,7 @@ RUN . ~/.bashrc && mamba activate flatcam && pip install -e .
 ENV DISPLAY=:99
 RUN echo "mamba activate flatcam" >> ~/.bashrc
 COPY startup.sh /startup.sh
+COPY app.py /app/app.py
 ENTRYPOINT ["/startup.sh"]
 
 
