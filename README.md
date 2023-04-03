@@ -22,6 +22,8 @@ This test PCB design is under (test_pcb/test_pcb).
 ## Convert the gerber -> STL
 In order to get the gerbers into STLs, I used [Flatcam](http://flatcam.org/) to go from Gerber->SVG, and then [OpenSCAD](https://openscad.org/) to go from SVG->STL.
 
+Go to the [Gerber2STL](gerber2stl.crome.org) web site and drop a gerber there.
+
 ## Apply the photoresist
 The photoresist I used is a positive resist (I think...)  Wherever it's exposed, it hardens and stays in place, which meanns white==copper.  This is the exact photoseisitive dry film I used https://www.amazon.com/dp/B07MMVPY1Z?psc=1&ref=ppx_yo2ov_dt_b_product_details.  It seems to work great.
 

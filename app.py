@@ -17,7 +17,7 @@ uploader = html.Div([
     html.Div(
         dcc.Upload(
             id='upload-data',
-            children=[html.H1('Gerber to STL converter'), 'Drop a Gerber, and this will convert it to an STL', html.A('Select Files')],
+            children=['Drop a Gerber, and this will convert it to an STL', html.A('Select Files')],
             style={
                 'width': '100%',
                 'height': '60px',
@@ -47,9 +47,17 @@ downloader = html.Div(
     [dcc.Download(id="downloader")]
     )
 
-plot_pane = [uploader, downloader, settings]
+footer = html.Div(
+    [html.A('Get the Source Code on github', href='https://github.com/ccrome/diy-pcb')]
+)
 
-plotter_layout = html.Div(plot_pane, className="container")
+plot_pane = [
+    html.Div(html.H1('Gerber to STL converter')),
+    uploader, downloader, settings, footer]
+
+plotter_layout = html.Div(
+        plot_pane
+    , className="container")
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app.layout = plotter_layout
@@ -81,4 +89,4 @@ def update_output(list_of_contents, list_of_fn):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, host="0.0.0.0")
+    app.run_server(debug=True, host="0.0.0.0", port="8050")
